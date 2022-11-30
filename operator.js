@@ -19,3 +19,22 @@ console.log(name !== "홍길동"); //값이 일치하지 않는 지를 비교, �
 //부정 연산자 !, true <-> false 로 반환한다.
 var nope = false;
 var yes = !nope; //true
+
+// 논리연산자
+var name = "김진";
+var age = 28;
+
+// &&는 앞의 연산 결과가 true일 때 뒤 연산을 수행함
+console.log(name === "김진" && age > 25); // 결과 : true
+console.log(name === "김진" && age > 30); // 결과 : false
+
+// ||는 앞이 연산 결과가 true라면 뒤 연산을 실행하지 않음
+console.log(name === "김진" || age < 30); //결과 : true
+
+// ||는 앞의 연산 결과가 false라면 뒤 연산을 수행함
+console.log(name !== "김진" || age > 25); //결과 : true
+
+var nope = false;
+var yes = true;
+console.log(nope || yes); //결과 : true
+console.log(nope && yes); //결과 : false
